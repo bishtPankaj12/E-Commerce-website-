@@ -92,33 +92,27 @@ function togglePassword(fieldId, button) {
     }
 }
 
-// toggle login button
+// prevent add to cart button click action for those user who are not logged in 
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     let authLink = document.getElementById("auth-link");
+document.addEventListener("DOMContentLoaded", function () {
+    // Check if user is logged in
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
 
-//     function updateAuthButton() {
-//         if (localStorage.getItem("isLoggedIn")) {
-//             // If user is logged in, show Logout button
-//             authLink.textContent = "Logout";
-//             authLink.href = "#"; // Prevent navigation
-//             authLink.classList.replace("btn-outline-primary", "btn-outline-danger");
+    // Select all "Add to Cart" buttons
+    const addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
 
-//             authLink.addEventListener("click", function (event) {
-//                 event.preventDefault();
-//                 localStorage.removeItem("isLoggedIn"); // Remove login status
-//                 alert("You have been logged out!");
-//                 window.location.reload(); // Refresh the page to update UI
-//             });
-//         } else {
-//             // If user is logged out, show Login button
-//             authLink.textContent = "Login";
-//             authLink.href = "login.html";
-//             authLink.classList.replace("btn-outline-danger", "btn-outline-primary");
-//         }
-//     }
-
-//     updateAuthButton();
-// });
+    addToCartButtons.forEach((button) => {
+        button.addEventListener("click", function (e) {
+            if (!isLoggedIn) {
+                e.preventDefault(); // Prevent button click action
+                alert("You must be logged in to add items to the cart!");
+                window.location.href = "/Pages/login.html"; // Redirect to login page
+            } else {
+                // Continue with the add to cart functionality
+                alert("Item added to cart!"); // Replace this with your cart logic
+            }
+        });
+    });
+});
 
 
