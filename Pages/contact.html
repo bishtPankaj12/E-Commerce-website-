@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Redirects users to signUp if not logged in -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (!localStorage.getItem("isLoggedIn")) {
+                alert("You must be sign Up to access this page!");
+                window.location.href = "signUp.html"; // Redirect to signUp page
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <input type="checkbox" name="" id="checkbox">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="../Pages/newArrival.html">New Arrivals</a></li>
+                <li><a href="../Pages/about.html">About Us</a></li>
+                <li><a href="../Pages/blog.html">Blog</a></li>
+                <li><a href="../Pages/contact.html">Contact</a></li>
+                </a>
+                <li><a href="../Pages/signUp.html">Sign Up</a></li>
+                <li><a id="auth-link" href="login.html" class="btn btn-outline-primary">Login</a></li>
+                <li>
+                    <div class="icon-cart">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+                        </svg>
+                        <span>0</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="logo">
+                <h2 style="margin-left: 75px;">EasyWear</h2>
+            </div>
+        </div>
+    </nav>
+
+    <!-- shoping cart page.. -->
+
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            <div class="item">
+                <div class="image">
+                    <img src="../images/topsale1.png" alt="img">
+                </div>
+                <div class="name">
+                    <p>Jorden Shoes</p>
+                </div>
+                <div class="totalPrice">
+                    &dollar;35.24
+                </div>
+                <div class="quantity">
+                    <span class="minus">
+                        < </span>
+                            <span>1</span>
+                            <span class="plus">></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">Check Out</button>
+        </div>
+    </div>
+
+    <!-- information form -->
+
+    <section id="contact">
+        <div class="contact container">
+            <form action="https://formspree.io/f/xzbowpjq" method="POST">
+                <div class="form">
+                    <div class="form-txt">
+                        <h4>INFORMATION</h4>
+                        <h1>Contact Us</h1>
+                        <span>As a brand rooted in luxury craftsmanship, we uphold the highest standards of quality and
+                            attention to detail in every product.</span>
+                        <h3>India</h3>
+                        <h3>Uttrakhand</h3>
+                        <p>Patel Nagar,Dehradoon,India<br>+91-8778646752</p>
+                    </div>
+                    <div class="form-details">
+                        <input type="text" name="name" id="name" placeholder="Name" required>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <textarea name="message" id="message" cols="52" rows="7" placeholder="Message"
+                            required></textarea>
+                        <button>SEND MESSAGE</button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- adding map into contact form -->
+             
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20007.26451700946!2d78.00423644405232!3d30.289348928869305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909297f6a0f0a6b%3A0x540df65d30ee33ee!2sBrahmanwala%2C%20Dehradun%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1739716339570!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+    </section>
+    <script src="../js/script.js"></script>
+    <script src="../js/addToCart.js"></script>
+</body>
+
+</html>

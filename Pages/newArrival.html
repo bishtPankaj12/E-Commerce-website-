@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Arrival</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Redirects users to signUp if not logged in -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (!localStorage.getItem("isLoggedIn")) {
+                alert("You must be sign Up to access this page!");
+                window.location.href = "signUp.html"; // Redirect to signUp page
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <input type="checkbox" name="" id="checkbox">
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="../Pages/newArrival.html">New Arrivals</a></li>
+                <li><a href="../Pages/about.html">About Us</a></li>
+                <li><a href="../Pages/blog.html">Blog</a></li>
+                <li><a href="../Pages/contact.html">Contact</a></li>
+                </a>
+                <li><a href="../Pages/signUp.html">Sign Up</a></li>
+                <li><a id="auth-link" href="login.html" class="btn btn-outline-primary">Login</a></li>
+                <li>
+                    <div class="icon-cart">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+                        </svg>
+                        <span>0</span>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="logo">
+                <h2 style="margin-left: 75px;">EasyWear</h2>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- shoping cart page.. -->
+
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            <div class="item">
+                <div class="image">
+                    <img src="../images/topsale1.png" alt="img">
+                </div>
+                <div class="name">
+                    <p>Jorden Shoes</p>
+                </div>
+                <div class="totalPrice">
+                    &dollar;35.24
+                </div>
+                <div class="quantity">
+                    <span class="minus">
+                        < </span>
+                            <span>1</span>
+                            <span class="plus">></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">Check Out</button>
+        </div>
+    </div>
+
+    <!-- New Arrival Pages -->
+
+    <header class="header-arrival">
+        <h1>New Arrivals</h1>
+        <p>Check out our latest collection of clothes and accessories!</p>
+    </header>
+
+    <section id="sellers" style="padding: 20px;">
+        <div class="seller container">
+            <div class="best-seller">
+                <div class="best-p1">
+                    <img src="../images/topsale1.png" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Air Jorden Shoes</p>
+                        </div>
+                        <div class="price">
+                            &dollar;37.24
+                        </div>
+                        <div class="card-btn">
+                            <div class="add-cart">
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="../images/topsale2.jpg" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>T-Shirts</p>
+                        </div>
+                        <div class="price">
+                            &dollar;17.24
+                        </div>
+                        <div class="card-btn">
+                            <div class="add-cart">
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="../images/topsale3.png" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Shirt</p>
+                        </div>
+                        <div class="price">
+                            &dollar;27.24
+                        </div>
+                        <div class="card-btn">
+                            <div class="add-cart">
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="../images/newarrival4.png" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Shoes</p>
+                        </div>
+                        <div class="price">
+                            &dollar;43.67
+                        </div>
+                        <div class="card-btn">
+                            <div class="add-cart">
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="seller container">
+            <div class="best-seller">
+                <div class="best-p1">
+                    <img src="../images/newarrival1.png" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>T-Shirt</p>
+                        </div>
+                        <div class="price">
+                            &dollar;10.23
+                        </div>
+                        <div class="card-btn">
+                            <div class="add-cart">
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="../images/newarrival2.png" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Bag</p>
+                        </div>
+                        <div class="price">
+                            &dollar;09.28
+                        </div>
+                        <div class="card-btn">
+                            <div class="add-cart">
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="../images/newarrival3.jpg" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Sunglass</p>
+                        </div>
+                        <div class="price">
+                            &dollar;06.24
+                        </div>
+                        <div class="card-btn">
+                            <div class="add-cart">
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="../images/newarrival4.png" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Shoes</p>
+                        </div>
+                        <div class="price">
+                            &dollar;43.67
+                        </div>
+                        <div class="card-btn">
+                            <div class="add-cart">
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="seller container">
+            <div class="best-seller">
+                <div class="best-p1">
+                    <img src="../images/newarrival4.png" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Shoes</p>
+                        </div>
+                        <div class="price">
+                            &dollar;37.24
+                        </div>
+                        <div class="card-btn">
+                            <div class="add-cart">
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="../images/newarrival1.png" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>T-Shirt</p>
+                        </div>
+                        <div class="price">
+                            &dollar;10.23
+                        </div>
+                        <div class="card-btn">
+                            <div class="add-cart">
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="../images/hotsale1.png" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>T-Shirt</p>
+                        </div>
+                        <div class="price">
+                            &dollar;15.24
+                        </div>
+                        <div class="card-btn">
+                            <div class="add-cart">
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-p1">
+                    <img src="../images/newarrival2.png" alt="img">
+                    <div class="best-p1-txt">
+                        <div class="name-of-p">
+                            <p>Bag</p>
+                        </div>
+                        <div class="price">
+                            &dollar;09.28
+                        </div>
+                        <div class="card-btn">
+                            <div class="add-cart">
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../js/script.js"></script>
+    <script src="../js/addToCart.js"></script>
+</body>
+
+</html>

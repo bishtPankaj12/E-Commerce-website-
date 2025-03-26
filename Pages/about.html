@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
+
+    <!-- Redirects users to signUp if not logged in -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (!localStorage.getItem("isLoggedIn")) {
+                alert("You must be sign Up to access this page!");
+                window.location.href = "signUp.html"; // Redirect to signUp page
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+
+    
+    <nav class="navbar">
+        <div class="navbar-container">
+            <input type="checkbox" name="" id="checkbox">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="../Pages/newArrival.html">New Arrivals</a></li>
+                <li><a href="../Pages/about.html">About Us</a></li>
+                <li><a href="../Pages/blog.html">Blog</a></li>
+                <li><a href="../Pages/contact.html">Contact</a></li>
+                </a>
+                <li><a href="../Pages/signUp.html">Sign Up</a></li>
+                <li><a id="auth-link" href="login.html" class="btn btn-outline-primary">Login</a></li>
+                <li>
+                    <div class="icon-cart">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+                        </svg>
+                        <span>0</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="logo">
+                <h2 style="margin-left: 75px;">EasyWear</h2>
+            </div>
+        </div>
+    </nav>
+
+     <!-- shoping cart page.. -->
+
+     <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            <div class="item">
+                <div class="image">
+                    <img src="../images/topsale1.png" alt="img">
+                </div>
+                <div class="name">
+                    <p>Jorden Shoes</p>
+                </div>
+                <div class="totalPrice">
+                    &dollar;35.24
+                </div>
+                <div class="quantity">
+                    <span class="minus">
+                        < </span>
+                            <span>1</span>
+                            <span class="plus">></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">Check Out</button>
+        </div>
+    </div>
+     
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Welcome to <strong>EasyWear</strong>, your go-to fashion destination for stylish clothing and accessories! We are an e-commerce brand committed to delivering the latest fashion trends straight to your doorstep. At <strong>EasyWear</strong>, we believe that fashion should be accessible, stylish, and effortless. Whether you're looking for casual everyday wear, trendy statement pieces, or elegant accessories, we've got you covered.</p>
+        
+        <h2>Our Mission</h2>
+        <p>At <strong>EasyWear</strong>, our mission is to make fashion convenient and enjoyable for everyone. We strive to bring high-quality, trendy apparel directly to your home, ensuring a hassle-free shopping experience. Customer satisfaction is at the heart of everything we do, and we aim to provide top-notch service, reliable delivery, and an ever-evolving selection of must-have styles. Our goal is not just to sell clothing but to build a strong connection with our customers, making sure they feel confident and stylish in every outfit they wear.</p>
+        
+        <h2>Why Choose EasyWear?</h2>
+        <ul class="highlights">
+            <li>Trendy & Affordable: We keep up with the latest fashion trends and offer stylish pieces at budget-friendly prices.</li>
+            <li>Quality Assurance: Our products are carefully selected to ensure they meet high-quality standards, providing comfort and durability.</li>
+            <li>Seamless Shopping Experience: With our user-friendly website, browsing, selecting, and purchasing your favorite styles is quick and easy.</li>
+            <li>Fast & Reliable Delivery: We ensure that your orders reach you on time, so you can enjoy your fashion finds without delay.</li>
+            <li>Excellent Customer Service: We value our customers and are always ready to assist with any questions, concerns, or fashion advice.</li>
+        </ul>
+
+        <h2 class="join-msg">Join the EasyWear family today and redefine your style with confidence and ease!</h2>
+        
+        <div class="contact">
+            <p>Have questions? <a href="../Pages/contact.html">Contact us</a></p>
+        </div>
+    </div>
+<script src="../js/script.js"></script>
+<script src="../js/addToCart.js"></script>
+</body>
+</html>

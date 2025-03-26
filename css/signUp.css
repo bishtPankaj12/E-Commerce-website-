@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../images/loginPage\ background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.greet{
+    text-align: center;
+    padding-top: 50px;
+}
+.register-container {
+    max-width: 500px;
+    margin: auto;
+    margin-top:60px;
+}
+
+.register-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.2);
+    /* Transparent White */
+    backdrop-filter: blur(25px);
+    /* Transparent White */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari Support */
+}
+

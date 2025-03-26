@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Blog</title>
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Redirects users to signUp if not logged in -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (!localStorage.getItem("isLoggedIn")) {
+                alert("You must be sign Up to access this page!");
+                window.location.href = "signUp.html"; // Redirect to signUp page
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar-container">
+            <input type="checkbox" name="" id="checkbox">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="../Pages/newArrival.html">New Arrivals</a></li>
+                <li><a href="../Pages/about.html">About Us</a></li>
+                <li><a href="../Pages/blog.html">Blog</a></li>
+                <li><a href="../Pages/contact.html">Contact</a></li>
+                </a>
+                <li><a href="../Pages/signUp.html">Sign Up</a></li>
+                <li><a id="auth-link" href="login.html" class="btn btn-outline-primary">Login</a></li>
+                <li>
+                    <div class="icon-cart">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+                        </svg>
+                        <span>0</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="logo">
+                <h2 style="margin-left: 75px;">EasyWear</h2>
+            </div>
+        </div>
+    </nav>
+
+     <!-- shoping cart page.. -->
+
+     <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            <div class="item">
+                <div class="image">
+                    <img src="../images/topsale1.png" alt="img">
+                </div>
+                <div class="name">
+                    <p>Jorden Shoes</p>
+                </div>
+                <div class="totalPrice">
+                    &dollar;35.24
+                </div>
+                <div class="quantity">
+                    <span class="minus">
+                        < </span>
+                            <span>1</span>
+                            <span class="plus">></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">Check Out</button>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <h2 class="top-heading">Latest Fashion Trends</h2>
+        <div class="blog-container">
+
+            <!-- Blog Post 1 -->
+            <div class="blog-post">
+                <img src="../images/blog1.jpg" alt="Trendy Outfits">
+                <h3>Top Fashion Trends for 2025</h3>
+                <p>Discover the latest fashion trends that will dominate this year...</p>
+                <a href="index.html">Shop Now</a>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="blog-post">
+                <img src="../images/trendy summer outfit.avif" alt="Summer Fashion">
+                <h3>Trendy Summer Outfit Ideas</h3>
+                <p>Stay stylish and comfortable this summer with our top picks...</p>
+                <a href="index.html">Shop Now</a>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="blog-post">
+                <img src="../images/blog3.jpg" alt="Accessories">
+                <h3>Must-Have Accessories Collection</h3>
+                <p>Elevate your look with these must-have accessories...</p>
+                <a href="index.html">Shop Now</a>
+            </div>
+            <!-- Blog Post 4 -->
+            <div class="blog-post">
+                <img src="../images/handbag2.avif" alt="Accessories">
+                <h3>Bag It Up: Must-Have Handbags</h3>
+                <p>Stylish, Functional Handbags for Every Occasion...</p>
+                <a href="index.html">Shop Now</a>
+            </div>
+
+
+        </div>
+    </section>
+
+<!-- below content -->
+ 
+    <div class="blog-container2">
+        <h1>The Ultimate Guide to Effortless Fashion in 2025</h1>
+
+        <div class="section">
+            <h2>Fashion Trends & Styling Tips</h2>
+            <p><strong>Spring/Summer 2025 Trends:</strong></p>
+            <ul>
+                <li>Soft Pastels & Earthy Tones</li>
+                <li>Oversized Silhouettes</li>
+                <li>Retro Revival</li>
+            </ul>
+            <p class="highlight"><strong>Styling Tips:</strong> Pair a breezy maxi dress with sandals or elevate
+                denim with a cropped blazer!</p>
+        </div>
+
+        <div class="section">
+            <h2>Product Spotlights & New Arrivals</h2>
+            <p>Check out our latest collection:</p>
+            <ul>
+                <li><strong>Easy Breeze Dress</strong> - Perfect for summer outings.</li>
+                <li><strong>Wide-Leg Jeans</strong> - A must-have for comfort and style.</li>
+                <li><strong>Minimalist Tote Bag</strong> - The ultimate everyday essential.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Fashion Care & Maintenance</h2>
+            <p>Keep your clothes looking fresh with these tips:</p>
+            <ul>
+                <li>Wash delicates gently.</li>
+                <li>Store seasonal items properly.</li>
+                <li>Quick fixes for small snags keep your wardrobe lasting longer.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Sustainability & Ethical Fashion</h2>
+            <p>We prioritize eco-friendly fabrics and ethical sourcing to help make fashion sustainable.</p>
+        </div>
+
+        <div class="section">
+            <h2>Sales & Discounts Announcements</h2>
+            <div class="sale">
+                <strong>FLASH SALE!</strong> Get <strong>20% OFF</strong> on all dresses for the next 48 hours. Use
+                code <strong>SPRING20</strong> at checkout.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Community Engagement & Brand Updates</h2>
+            <p>We're launching a new accessory line soon! Follow us for more details.</p>
+            <a href="#" class="cta">Shop Now</a>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="../js/addToCart.js"></script>
+</body>
+
+</html>

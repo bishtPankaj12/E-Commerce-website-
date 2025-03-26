@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+.cartTab h1{
+    color: #FFF;
+}
+
+/* Blog Section Styles */
+
+.blog {
+    padding: 50px 20px;
+}
+
+.blog h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.top-heading{
+    text-align: center;
+    color:rgba(0, 0, 0, 0.89);
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.blog-post {
+    background: #fff;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+
+.blog-post img {
+    width: 300px;
+    height: 300px;
+}
+
+.blog-post h3 {
+    margin: 15px;
+    font-size: 1.4rem;
+}
+
+.blog-post p {
+    margin: 0 15px 15px;
+    color: #555;
+}
+
+.blog-post a {
+    display: block;
+    text-align: center;
+    background: #f05e8a;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.blog-post a:hover {
+    background: #e65c50;
+    transition: all 0.3s ease;
+}
+
+/* <--below post content--> */
+
+.blog-container2 {
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color:black;
+    margin-bottom: 14px;
+    font-size: 25px;
+}
+
+h2 {
+    color:rgba(0, 0, 0, 0.89);
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+.section p{
+    margin-bottom: 5px;
+}
+.section ul li{
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+.highlight {
+    background: #fff3cd;
+    padding: 10px;
+    margin-top: 10px;
+    border-left: 5px solid #ffa502;
+}
+
+.sale {
+    background: #ff4757;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.sale strong {
+    font-size: 1.2em;
+}
+
+.cta {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    background: #d63384;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.cta:hover {
+    background: #b52c6f;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
