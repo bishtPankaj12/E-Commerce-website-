@@ -94,31 +94,31 @@ function togglePassword(fieldId, button) {
 
 // toggle login button
 
-document.addEventListener("DOMContentLoaded", function () {
-    let authLink = document.getElementById("auth-link");
+// document.addEventListener("DOMContentLoaded", function () {
+//     let authLink = document.getElementById("auth-link");
 
-    function updateAuthButton() {
-        if (localStorage.getItem("isLoggedIn")) {
-            // If user is logged in, show Logout button
-            authLink.textContent = "Logout";
-            authLink.href = "#"; // Prevent navigation
-            authLink.classList.replace("btn-outline-primary", "btn-outline-danger");
+//     function updateAuthButton() {
+//         if (localStorage.getItem("isLoggedIn")) {
+//             // If user is logged in, show Logout button
+//             authLink.textContent = "Logout";
+//             authLink.href = "#"; // Prevent navigation
+//             authLink.classList.replace("btn-outline-primary", "btn-outline-danger");
 
-            authLink.addEventListener("click", function (event) {
-                event.preventDefault();
-                localStorage.removeItem("isLoggedIn"); // Remove login status
-                alert("You have been logged out!");
-                window.location.reload(); // Refresh the page to update UI
-            });
-        } else {
-            // If user is logged out, show Login button
-            authLink.textContent = "Login";
-            authLink.href = "login.html";
-            authLink.classList.replace("btn-outline-danger", "btn-outline-primary");
-        }
-    }
+//             authLink.addEventListener("click", function (event) {
+//                 event.preventDefault();
+//                 localStorage.removeItem("isLoggedIn"); // Remove login status
+//                 alert("You have been logged out!");
+//                 window.location.reload(); // Refresh the page to update UI
+//             });
+//         } else {
+//             // If user is logged out, show Login button
+//             authLink.textContent = "Login";
+//             authLink.href = "login.html";
+//             authLink.classList.replace("btn-outline-danger", "btn-outline-primary");
+//         }
+//     }
 
-    updateAuthButton();
-});
+//     updateAuthButton();
+// });
 
 
