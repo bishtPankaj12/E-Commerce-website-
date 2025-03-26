@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem(email, JSON.stringify(userData));
 
         alert("Registration successful! Redirecting to login page...");
-        window.location.href = "login.html"; // Redirect to login page
+        window.location.href = "/Pages/login.html"; // Redirect to login page
     });
 });
 
@@ -68,7 +68,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     if (userData && userData.password === password) {
         localStorage.setItem("isLoggedIn", "true"); // Mark user as logged in
         alert("Login successful!");
-        window.location.href = "index.html"; // Redirect to home page
+        window.location.href = "../index.html"; // Redirect to home page
     } else {
         alert("Invalid email or password. Please try again.");
     }
